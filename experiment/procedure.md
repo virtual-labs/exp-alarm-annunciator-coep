@@ -1,4 +1,3 @@
-## Procedure
 ## Instructions to run the simulator
 
 1)Select Application. \
