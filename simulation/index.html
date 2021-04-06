@@ -1,0 +1,350 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title>Design an alarm annunciator </title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/js/jquery.min.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<!-- <link rel="stylesheet" -->
+<!-- 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="css/HighLowSelecter.css" rel="stylesheet"
+	type="text/css">
+
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/homePage.css" rel="stylesheet"
+	type="text/css">
+<link href="css/onlineAssert/css/dataTables.bootstrap.min.css"
+	rel="stylesheet">
+<link href="css/onlineAssert/css/buttons.bootstrap.min.css"
+	rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet"
+	href="css/onlineAssert/css/alertify.min.css" />
+<!-- Default theme -->
+<link rel="stylesheet"
+	href="css/onlineAssert/css/default.min.css" />
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-ui.js"></script>
+<script src="js/lib/jquery.browser.js"></script>
+<script src="js/onlineAssert/js/rangeslider.min.js"></script>
+
+<script type="text/javascript" src="js/lib/raphael.js"></script>
+<script type="text/javascript" src="js/lib/Class.js"></script>
+<script type="text/javascript" src="js/lib/shifty.js"></script>
+<script type="text/javascript" src="js/lib/canvg.js"></script>
+<script type="text/javascript" src="js/lib/jquery.autoresize.js"></script>
+
+<script type="text/javascript"
+	src="js/lib/jquery-touch_punch.js"></script>
+<script type="text/javascript"
+	src="js/lib/pathfinding-browser.min.js"></script>
+<script type="text/javascript" src="js/lib/StackBlur.js"></script>
+
+
+
+<script src="js/dist/draw2d.js"></script>
+
+
+
+<style>
+@media screen and (min-width: 700px) and (max-width: 1200px) { 
+    .palette_node_element {
+    float: left;
+    width: 48%;
+    margin: 1px 1%;
+}
+
+}
+
+
+
+</style>
+
+
+
+
+<!-- JavaScript -->
+<script src="js/onlineAssert/js/alertify.min.js"></script>
+
+
+
+
+
+<script src="js/Alarm_src/Calculation.js"></script>
+
+
+
+
+
+
+<script src="js/Alarm_config/AlarmAnnunciator_SelectApp.js"></script>
+<script src="js/Alarm_config/Level_config.js"></script>
+<script src="js/Alarm_config/Flow_config.js"></script>
+<script src="js/Alarm_config/Pressure_config.js"></script>
+<script src="js/Alarm_config/Temp_config.js"></script>
+
+<script src="js/Alarm_Characterisation/LCS_2ACharacterisation.js"></script>
+<script src="js/Alarm_Characterisation/TCS_2ACharacterisation.js"></script>
+<script src="js/Alarm_Characterisation/PCS_2ACharacterisation.js"></script>
+<script src="js/Alarm_Characterisation/FCS_2ACharacterisation.js"></script>
+
+<script src="js/Alarm_Characterisation/animDiagrams/LCS_animDiagram.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/PCS_animDiagram.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/FCS_animDiagram.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/TCS_animDiagram.js"></script>
+
+<script src="js/Alarm_Characterisation/animDiagrams/AlarmWindow_LCS.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/AlarmWindow_PCS.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/AlarmWindow_FCS.js"></script>
+<script src="js/Alarm_Characterisation/animDiagrams/AlarmWindow_TCS.js"></script>
+<script src="js/Alarm_Characterisation/Calculations/LCS_Calculations.js"></script>
+<script src="js/Alarm_Characterisation/Calculations/PCS_Calculations.js"></script>
+<script src="js/Alarm_Characterisation/Calculations/FCS_Calculations.js"></script>
+<script src="js/Alarm_Characterisation/Calculations/TCS_Calculations.js"></script>
+
+
+<script src="js/Alarm_Constants/LCSConstants.js"></script>
+<script src="js/Alarm_Constants/TCSConstants.js"></script>
+<script src="js/Alarm_Constants/PCSConstants.js"></script>
+<script src="js/Alarm_Constants/FCSConstants.js"></script>
+
+
+
+
+<script src="js/Alarm_config/diagrams/LevelControl.js"></script>
+<script src="js/Alarm_config/diagrams/PressureControl.js"></script>
+<script src="js/Alarm_config/diagrams/TempControl.js"></script>
+<script src="js/Alarm_config/diagrams/FlowControl.js"></script>
+<script src="js/Alarm_config/diagrams/LCSAlarmComponents.js"></script>
+<script src="js/Alarm_config/diagrams/TCSAlarmComponents.js"></script>
+<script src="js/Alarm_config/diagrams/PCSAlarmComponents.js"></script>
+<script src="js/Alarm_config/diagrams/FCSAlarmComponents.js"></script>
+
+
+
+
+
+
+
+
+<script src="js/Alarm_src/Application.js"></script>
+<script src="js/Alarm_src/View.js"></script>
+<script src="js/Alarm_src/Toolbar.js"></script>
+<script src="js/Alarm_src/HoverConnection.js"></script>
+<script src="js/Alarm_src/SymbolLiabrary.js"></script>
+<script src="js/Alarm_src/symbols/LTSymbols.js"></script>
+<script src="js/Alarm_src/symbols/TTSymbols.js"></script>
+<script src="js/Alarm_src/symbols/PTSymbols.js"></script>
+<script src="js/Alarm_src/symbols/FTSymbols.js"></script>
+<script src="js/Alarm_src/symbols/commonSymbols.js"></script>
+<script src="js/Alarm_src/symbols/I2PSymbols.js"></script>
+<script src="js/Alarm_src/symbols/PneumaticTransSymbols.js"></script>
+<script src="js/Alarm_src/symbols/P2ESymbols.js"></script>
+<script src="js/Alarm_src/symbols/HighSelectorSymbols.js"></script>
+<script src="js/Alarm_src/symbols/LowSelectorSymbols.js"></script>
+<script src="js/Alarm_src/symbols/LimiterSymbols.js"></script>
+<script src="js/Alarm_src/symbols/alarmAnnunciatorSymbols.js"></script>
+<script src="js/Alarm_src/symbols/alarmAnnunciator_ORGate_Symbols.js"></script>
+<script src="js/Alarm_src/symbols/alarmAnnunciator_BulbWindow_Symbols.js"></script>
+
+
+<script src="js/Alarm_connections/checkConnectionsForAlarmAnnunciator.js"></script>
+<script src="js/Alarm_connections/Alarm/alarmConn_For6Win.js"></script>
+<script src="js/Alarm_connections/Alarm/alarmConn_For5Win.js"></script>
+<script src="js/Alarm_connections/Alarm/alarmConn_For4Win.js"></script>
+<script src="js/Alarm_connections/Alarm/alarmConn_For3Win.js"></script>
+<script src="js/Alarm_connections/Alarm/alarmConn_For2Win.js"></script>
+
+<script src="js/Alarm_connections/Connhint.js"></script>
+
+<script type="text/javascript" src="js/lib/canvasjs.min.js"></script>
+
+
+<script src="js/onlineAssert/js/jquery.dataTables.min.js"></script>
+<script src="js/onlineAssert/js/dataTables.bootstrap.min.js"></script>
+<script src="js/onlineAssert/js/dataTables.buttons.min.js"></script>
+<script src="js/onlineAssert/js/buttons.bootstrap.min.js"></script>
+<script src="js/onlineAssert/js/jszip.min.js"></script>
+<script src="js/onlineAssert/js/pdfmake.min.js"></script>
+<script src="js/onlineAssert/js/vfs_fonts.js"></script>
+<script src="js/onlineAssert/js/buttons.html5.min.js"></script>
+<script src="js/onlineAssert/js/buttons.print.min.js"></script>
+
+
+
+<script>
+// var appId = 1;
+// var numOfWindows = 4;
+// var alarmtype = 1;
+// var ISASeq  = 2;
+// var maxLimit = 70;
+// var minLimit = 30;
+</script>
+
+
+
+
+</head>
+
+
+
+<body >
+	<header>
+		<img src='images/COEPlogo.png' />
+		<h1>COLLEGE OF ENGINEERING, PUNE</h1>
+		<h2 id="appName">
+			<i>Design an alarm annunciator </i>
+		</h2>
+	</header>
+	
+
+	
+	
+
+<!-- 	 <a href="javascript:SINGLEACTINGCYLINDER.connectionLevel(numOfWindows, alarmtype, ISASeq)">check connections</a><br/> -->
+
+<!--      	<a href="javascript:SINGLEACTINGCYLINDER.LCS_Characterisation2A2B(numOfWindows, alarmtype, ISASeq, appId, maxLimit, minLimit)">LCS Application</a><br/>  -->
+<!--  	<a href="javascript:SINGLEACTINGCYLINDER.TCS_Characterisation2A2B(numOfWindows, alarmtype, ISASeq, appId, maxLimit, minLimit)">TCS Application</a><br/>  -->
+<!--  	<a href="javascript:SINGLEACTINGCYLINDER.PCS_Characterisation2A2B(numOfWindows, alarmtype, ISASeq, appId, maxLimit, minLimit)">PCS Application</a><br/>  -->
+ 	
+<!--  	<a href="javascript:SINGLEACTINGCYLINDER.FCS_Characterisation2A2B(numOfWindows, alarmtype, ISASeq, appId, maxLimit, minLimit)">FCS Application</a><br/>  -->
+
+	<div id="mainDiv" class="container-fluid">
+		<div class="row">
+			<!--  <div
+				class="col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3 levelsApp">
+				<label class="control-label col-sm-2" for="levels">Select
+					Application</label>
+				<div class="col-sm-10">
+					<select class="form-control" name="App" id="levels">
+						
+					</select>
+				</div>
+				<div id="tramsTInst">
+					<i>
+						<p>In any process industry transmitters, I/P converters,
+							Controllers, and Control valves are termed as "Process Loop
+							Components. While using these components certain steps are
+							required to be carried out. These steps are termed as
+							"Connection/Configuration", "Characterisation", "Calibration",
+							and "fault finding". In each phase the user is supposed to carry
+							out certain tasks as per industry standard. The main unit
+							processes which are predominantly used in industries are
+							Temperature, Level, Pressure, and Flow control System. As per the
+							requirement the you can select the process and follow the steps
+							as described in the "Procedure" section. The details of each step
+							are as follows:</p>
+						<ol
+							style="overflow-y: scroll; height: 400px; padding-bottom: 100px;">
+
+							<li><span>Configure a I/P converters:</span> To configure a
+								I/P converter you need to select type of an I/P converter</li>
+							<li><span>Connection/wiring diagram:</span> From the
+								standard library select the components required for the
+								connection like a power supply, I/P converters module, and an
+								analog input card. Connect them as per standard connection
+								diagram mentioned in theory.</li>
+							<li><span>Characterisation:</span> Once the configuration
+								and wiring diagram is complete change the process variable and
+								observe the output of the I/P converters. Ensure that you have
+								exposed I/P converters to full span as far as possible take
+								maximum readings.</li>
+							<li><span>Calibration:</span> After scrutinising the
+								readings calculate various parameters and calibrate the I/P
+								converters by adjusting "Zero, Span, and Linearity"</li>
+							<li><span>Fault finding:</span> In this phase a fault is
+								introduced and the user needs to identify the fault based on the
+								readings of the I/P converters.</li>
+						</ol>
+					</i>
+				</div>
+			</div>-->
+			<div class="col-md-6 col-sm-12" id="canvasMainDiv">
+				<div class="col-md-12 col-sm-12">
+
+
+
+					<button id="next" class="AppField">Start Test</button>
+				</div>
+				<div class="col-md-12 col-sm-12" style="">
+					<div id="canvas"></div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div id="TestDiv"></div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+	</div>
+	</div>
+
+
+
+	<div id="myModal" class="modal fade" role="dialog"  style="display:none">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+					<!-- LT Connection Hint Images-->
+					<img id="Alarm1_win2" src="images/ConnImg/Window2ForAlarm1.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm1_win3" src="images/ConnImg/Window3ForAlarm1.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm1_win4" src="images/ConnImg/Window4ForAlarm1.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm1_win5" src="images/ConnImg/Window5ForAlarm1.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm1_win6" src="images/ConnImg/Window6ForAlarm1.png"
+						style="width:100%; height: 300px; display: none"> 
+						
+					<img id="Alarm2_win2" src="images/ConnImg/Window2ForAlarm2.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm2_win3" src="images/ConnImg/Window3ForAlarm2.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm2_win4" src="images/ConnImg/Window4ForAlarm2.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm2_win5" src="images/ConnImg/Window5ForAlarm2.png"
+						style="width:100%; height: 300px; display: none"> 
+					<img id="Alarm2_win6" src="images/ConnImg/Window6ForAlarm2.png"
+						style="width:100%; height: 300px; display: none"> 
+						
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	
+
+
+
+<script src="../assets/js/iframeResize.js"></script></body>
+
+
+
+
+
+
+</html>
